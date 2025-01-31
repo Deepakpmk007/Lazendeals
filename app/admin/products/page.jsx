@@ -95,7 +95,10 @@ export default function Products() {
             >
               X
             </button>
-            <EditPopup productId={selectedProduct} onClose={handlePopupClose} />
+            <EditPopup
+              productId={selectedProduct?.id}
+              onClose={handlePopupClose}
+            />
           </div>
         )}
       </div>
